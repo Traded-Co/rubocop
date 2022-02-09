@@ -1,9 +1,21 @@
-AllCops:
-  NewCops: enable
-
 require: 
   - rubocop-rails
   - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'vendor/**/*'
+    - 'test/fixtures/**/*'
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'log/**/*'
+    - 'tmp/**/*'
+    - 'app/views/**/*'
+    - 'config/environments/*'
+    - 'config/initializers/devise.rb'
+    - 'node_modules/**/*'
+    - 'spec/**/*'
 
 Style/Documentation:
   Enabled: false
@@ -22,3 +34,6 @@ Metrics/AbcSize:
 
 Metrics/ClassLength:
   Max: 150
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
