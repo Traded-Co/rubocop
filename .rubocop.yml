@@ -17,6 +17,7 @@ AllCops:
     - 'node_modules/**/*'
     - 'spec/**/*'
     - 'config/routes.rb'
+    - 'lib/tasks/one_time.rake'
 
 Style/Documentation:
   Enabled: false
