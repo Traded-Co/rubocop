@@ -14,6 +14,7 @@ AllCops:
     - 'app/views/**/*'
     - 'config/environments/*'
     - 'config/initializers/devise.rb'
+    - 'config/initializers/new_framework_defaults_7_0.rb'
     - 'node_modules/**/*'
     - 'spec/**/*'
     - 'config/routes.rb'
